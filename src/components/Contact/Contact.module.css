@@ -50,6 +50,7 @@
 }
 .btn:hover {
   background: var(--secondary);
+  scale: 0.97;
 }
 
 @media (min-width: 900px) {

@@ -26,7 +26,7 @@ const Contact = () => {
           <input
             type="hidden"
             name="access_key"
-            value="YOUR_ACCESS_KEY_HERE"></input>
+            value={`${import.meta.env.VITE_PUBLIC_KEY}`}></input>
           <div className={styles.contact}>
             <label htmlFor="name">{t('contact.name')}</label>
             <input type="text" id="name" name="name" required />
