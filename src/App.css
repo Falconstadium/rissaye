@@ -1,0 +1,17 @@
+:root {
+  --text: #e7edf0;
+  --background: #0b0e10;
+  --primary: #acc0ca;
+  --secondary: #444b6a;
+  --accent: #676b9d;
+}
+
+body {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  width: 100%;
+  min-height: 100dvh;
+  background-color: var(--background);
+  color: var(--text);
+  overflow-x: hidden;
+}

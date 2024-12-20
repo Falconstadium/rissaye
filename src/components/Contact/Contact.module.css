@@ -1,0 +1,63 @@
+.form {
+  display: grid;
+  padding: 6rem 1rem;
+  gap: 2em;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.form h4 {
+  color: var(--accent);
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.inputs {
+  display: grid;
+  gap: 1em;
+}
+.inputs label {
+  text-transform: capitalize;
+}
+.inputs input,
+.inputs textarea {
+  border-radius: 0.2rem;
+  padding: 0.2rem 0.5rem;
+  background: transparent;
+  color: var(--text);
+  border: 1px solid var(--primary);
+}
+.inputs input:focus,
+.inputs textarea:focus {
+  outline: none;
+}
+
+.contact {
+  display: grid;
+  gap: 0.5em;
+}
+
+.btn {
+  background: var(--accent);
+  color: var(--text);
+  padding: 0.3rem 1rem;
+  border-radius: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  transition: 0.3s;
+}
+.btn:hover {
+  background: var(--secondary);
+}
+
+@media (min-width: 900px) {
+  .form {
+    max-width: 500px;
+    padding: 7rem 2rem;
+  }
+  .btn {
+    font-size: 1rem;
+  }
+}

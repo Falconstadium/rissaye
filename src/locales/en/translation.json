@@ -1,0 +1,30 @@
+{
+  "hero":{
+    "title": "Frontend Web Developer",
+    "parag": "Hi, I'm A passionate Frontend Web Developer based in Morocco."
+  },
+  "about":{
+    "title": "about me:",
+    "parag": "Hey, my name is Yassir, Frontend web developer, with a focus on developing landing pages and websites.",
+    "parag2": "My main stack currently is React in combination with Tailwind CSS and TypeScript."
+  },
+  "projects":{
+    "title": "projects",
+    "landing": "Landing page",
+    "ecom": "E-commerce store",
+    "live": "View live"
+  },
+  "contact":{
+    "title": "contact me",
+    "name": "full name",
+    "email": "email",
+    "subject": "subject",
+    "msg": "message",
+    "btn": "send",
+    "success": "Message sent successfully",
+    "error": "Something Wrong! Try again."
+  },
+  "footer": {
+    "footer": "all rights reserved"
+  }
+}

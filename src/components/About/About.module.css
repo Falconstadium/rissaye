@@ -1,0 +1,62 @@
+.about {
+  display: grid;
+  place-content: center;
+  place-items: center;
+  margin: 0 auto;
+  gap: 2em;
+  padding: 0 1rem;
+  margin: 0 auto;
+  min-height: 100dvh;
+  width: 100%;
+}
+
+.img img {
+  width: 200px;
+  aspect-ratio: 1/1;
+  margin: 0 auto;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.img img:hover {
+  scale: 1.1;
+}
+
+.identify {
+  display: grid;
+  place-items: center;
+  gap: 1em;
+}
+
+.identify h4 {
+  color: var(--accent);
+  font-size: 1.1rem;
+  text-transform: uppercase;
+}
+
+.parag {
+  text-align: center;
+  display: grid;
+  gap: 1.2em;
+  font-size: 0.9rem;
+}
+
+@media (min-width: 900px) {
+  .about {
+    max-width: 900px;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 2rem;
+  }
+  .about img {
+    width: 300px;
+  }
+  .identify {
+    display: grid;
+    place-content: center;
+    place-items: start;
+    gap: 1em;
+  }
+  .parag {
+    text-align: justify;
+    font-size: 1rem;
+  }
+}

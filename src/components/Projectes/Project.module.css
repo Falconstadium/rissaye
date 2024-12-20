@@ -1,0 +1,98 @@
+.project {
+  padding: 4rem 1rem;
+  display: grid;
+  gap: 3rem;
+  place-items: center;
+}
+
+.project h4 {
+  color: var(--accent);
+  font-size: 1.1rem;
+  text-transform: uppercase;
+}
+
+.project img {
+  width: 300px;
+  height: 500px;
+  object-fit: cover;
+  object-position: top;
+}
+
+.proj {
+  display: grid;
+  gap: 4em;
+}
+
+.info {
+  display: grid;
+  place-items: center;
+  gap: 2em;
+}
+.info p {
+  font-weight: 500;
+}
+
+.gemini {
+  display: grid;
+  gap: 1em;
+  place-items: center;
+  box-shadow: 0 0 2px var(--text);
+  padding-bottom: 2rem;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.gemini a {
+  text-decoration: none;
+  text-transform: capitalize;
+  color: var(--background);
+  background-color: var(--primary);
+  padding: 0.4rem 1rem;
+  border-radius: 0.5rem;
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+.gemini a:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 1px 12px 0 var(--primary);
+}
+
+.gemini picture img {
+  width: 300px;
+  height: 500px;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+.icons img {
+  width: 25px;
+  height: 25px;
+}
+
+.info svg {
+  width: 20px;
+  height: 20px;
+}
+
+@media (min-width: 900px) {
+  .project {
+    max-width: 900px;
+    padding: 6rem 2rem;
+    margin: 0 auto;
+  }
+  .gemini {
+    grid-template-columns: repeat(2, 1fr);
+    padding-bottom: 0;
+  }
+  .gemini picture img {
+    width: 600px;
+    height: 250px;
+    border-radius: 0.3rem;
+    box-shadow: 0 0 2px var(--text);
+  }
+}

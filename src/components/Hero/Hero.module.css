@@ -1,0 +1,153 @@
+.hero {
+  display: grid;
+  place-content: center;
+  place-items: center;
+  gap: 4em;
+  padding: 2rem 1rem;
+  min-height: 100dvh;
+  width: 100%;
+}
+
+.container {
+  display: grid;
+  place-content: center;
+  place-items: center;
+  margin: 0 auto;
+  width: 100%;
+  gap: 1em;
+}
+
+.intro {
+  text-align: center;
+  display: grid;
+  gap: 1em;
+}
+.intro h1 {
+  font-size: 2.5rem;
+  line-height: 1;
+}
+.intro p {
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.img img {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  background-image: url(img/hero.svg);
+  border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  border: 2px solid var(--primary);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  transition: all 1s ease-in-out;
+  animation: alpha 8s ease-in-out infinite;
+}
+@keyframes alpha {
+  0% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+  50% {
+    border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+  }
+  100% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+}
+
+.tech {
+  display: flex;
+  align-items: center;
+  gap: 0.8em;
+}
+.tech img {
+  width: 35px;
+  transition: 0.3s;
+}
+.tech img:hover {
+  transform: translateY(-3px);
+}
+
+.load {
+  background-color: var(--background);
+  width: 100%;
+  min-height: 100dvh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loader {
+  display: block;
+  --height-of-loader: 3px;
+  --loader-color: #0071e2;
+  width: 200px;
+  height: var(--height-of-loader);
+  border-radius: 2rem;
+  background-color: var(--text);
+  position: relative;
+}
+
+.loader::before {
+  content: '';
+  position: absolute;
+  background: var(--loader-color);
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  border-radius: 2rem;
+  animation: moving 2s ease-in-out infinite;
+}
+
+@keyframes moving {
+  50% {
+    width: 100%;
+  }
+
+  100% {
+    width: 0;
+    right: 0;
+    left: unset;
+  }
+}
+
+.preloader.hide {
+  opacity: 0;
+  visibility: hidden;
+}
+
+@media (min-width: 900px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 900px;
+  }
+  .img img {
+    width: 300px;
+    height: 300px;
+  }
+  .intro {
+    order: -1;
+  }
+  .intro h1 {
+    font-size: 3rem;
+    line-height: 1;
+  }
+  .intro p {
+    font-size: 1.1rem;
+    text-align: justify;
+  }
+  .tech {
+    gap: 1.2em;
+  }
+  .tech img {
+    width: 40px;
+    transition: 0.3s;
+  }
+}
